@@ -83,15 +83,29 @@ public class Question1 {
 		//Q10
 		int num = 50;														// int型変数 numに50を代入
 		String numT = String.valueOf(num);
-		System.out.println("得点：" + numT + "点");							//int型の変数 num を String 型に変換し、「得点: 50点」という形でコンソールに表示
+		System.out.println("得点：" + numT + "点");							// int型の変数 num を String 型に変換し、「得点: 50点」という形でコンソールに表示
 		
 		
 		//Q11
+		int a = 10;															// int型の変数 a に 10 を代入
+		int b = 20;															// int型の変数 b に 20 を代入
+		boolean result = (a < b);											// 条件演算子を使用して、a が b より小さいかどうかを判定
+		System.out.println(result);											// その結果を boolean 型の変数 result に代入
+		
+		
+		//Q12
+		int x = 15;															// int 型䛾変数 x 䛻 15 を代入
+		String max = (x >= 10 ) ? "OK" : "NG" ;								// x が 10 以上䛺ら "OK"、そう䛷䛺けれ䜀 "NG" を表示
+		System.out.println(max);
+		
+		
+		//Q13
+		String text = "私はJavaが好きです。　Javaは楽しい！";				// String型の変数 text に「私はJavaが好きです。Javaは楽しい！」という文章を代入
+		text = text.replace("Java", "Python");								
+		System.out.println(text);											// 文章の中にある「Java」を「Python」に置き換えて表示
 		
 		
 		
-		
-				
 		
 	}
 
