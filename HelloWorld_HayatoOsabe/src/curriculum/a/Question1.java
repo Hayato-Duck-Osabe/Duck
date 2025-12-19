@@ -7,14 +7,14 @@ public class Question1 {
 
 	public static void main(String[] args) {
 		// Q1
-		byte byteNum = 1;  					// byte型の変数 初期値を設定
-		short shortNum = 1;					// short型の変数 初期値を設定
-		int intNum = 1;						// int型の変数 初期値を設定
-		long longNum = 1;					// long型の変数 初期値を設定
-		float floatNum = 1.4f;				// float型の変数 初期値を設定
-		double doubleNum = 2.236;			// double型の変数 初期値を設定
-		char letter = 'H';					// char型の変数 初期値を設定
-		String letters = "Duck";			// String型の変数 初期値を設定
+		byte byteNum = 0;  					// byte型の変数 初期値を設定
+		short shortNum = 0;					// short型の変数 初期値を設定
+		int intNum = 0;						// int型の変数 初期値を設定
+		long longNum = 0L;					// long型の変数 初期値を設定
+		float floatNum = 0.0f;				// float型の変数 初期値を設定
+		double doubleNum = 0.0;			// double型の変数 初期値を設定
+		char letter = '\u0000';					// char型の変数 初期値を設定
+		String letters = null;			// String型の変数 初期値を設定
 		boolean isBoolean = false;			// boolean型の変数 初期値を設定
 		
 		
