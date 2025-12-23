@@ -26,10 +26,10 @@ public class Question2 {
 		if (age >= 20) {
 			System.out.println("成人です");		// age が 20 以上の場合 は「成人です」と表示
 		}
-		if (age >= 13 && age <= 19) {			// age が 13 以上かつ 19 以下の場合なら「ティーンエージャーです」と表示
+		else if (age >= 13 && age <= 19) {			// age が 13 以上かつ 19 以下の場合なら「ティーンエージャーです」と表示
 			System.out.println("ティーンエージャーです");
 		}
-		if (age <= 12) {						// age が 12 以下の場合　「子供です」と表示
+		else if (age <= 12) {						// age が 12 以下の場合　「子供です」と表示
 			System.out.println("子供です");
 		}
 		
@@ -42,10 +42,10 @@ public class Question2 {
 		if (x>y && x>z) {						// 3つの数値の中で 最も大きい値を判定して表示
 			System.out.println("一番大きい数字は"+ x +"です");
 		}
-		if (y>x && y>z) {
+		else if (y>x && y>z) {
 			System.out.println("一番大きい数字は"+ y +"です");
 		}
-		if (z>x && z>y) {
+		else if (z>x && z>y) {
 			System.out.println("一番大きい数字は"+ z +"です");
 		}
 		
@@ -56,10 +56,10 @@ public class Question2 {
 		if (num > 0) {														//num の値が 0 より大きい場合 は「正の数です」と表示
 			System.out.println("正の数です");
 		}
-		if (num == 0) {														//num の値が 0 の場合 は「0 です」と表示
+		else if (num == 0) {														//num の値が 0 の場合 は「0 です」と表示
 			System.out.println("0です");
 		}
-		if (num < 0) {														//num の値が 0 より小さい場合 は「負の数です」と表示
+		else if (num < 0) {														//num の値が 0 より小さい場合 は「負の数です」と表示
 			System.out.println("負の数です");
 		}
 		
@@ -77,13 +77,13 @@ public class Question2 {
 		if (score1 >= 90) {													//90以上なら”優”
 			System.out.println("優");
 		}
-		if (score1 >= 70 && score1 <90) {									//70以上なら”良”
+		else if (score1 >= 70 && score1 <90) {									//70以上なら”良”
 			System.out.println("良");
 		}
-		if (score1 >=50 && score1< 70) {									//50以上なら”可”
+		else if (score1 >=50 && score1< 70) {									//50以上なら”可”
 			System.out.println("可");
 		}
-		if (score1 <50) {													//50未満なら”不可”を表示
+		else if (score1 <50) {													//50未満なら”不可”を表示
 			System.out.println("不可");
 		}
 		
@@ -95,8 +95,58 @@ public class Question2 {
 			System.out.println("入力が無効です");
 		}
 		
-		scanner.close();
 		
+		
+		//Q9
+		int day = scanner.nextInt();										//int 型の変数 day を用意するし、コンソール入力で 1〜7 の数値を代入
+		switch (day) {
+		case 1: 
+			System.out.println("月曜日");									//数値に応じて曜日を表示
+			break;
+		case 2: 
+			System.out.println("火曜日");
+			break;
+		case 3:
+			System.out.println("水曜日");
+			break;
+		case 4:
+			System.out.println("木曜日");
+			break;
+		case 5:
+			System.out.println("金曜日");
+			break;
+		case 6:
+			System.out.println("土曜日");
+			break;
+		case 7:
+			System.out.println("日曜日");
+			break;
+		default:
+			System.out.println("無効な入力です");							//1〜7 以外なら「無効な入力です」と表示
+		}
+			
+			
+			
+		//Q10
+		int month = scanner.nextInt();										//int 型の変数 month を用意し、コンソール入力で 1～12 の数値を代入
+		switch (month) {													//月の値に応じて 季節 を表示
+		case 12,1,2:
+			System.out.println("冬");
+		break;
+		case 3,4,5:
+			System.out.println("春");
+		break;
+		case 6,7,8:
+			System.out.println("夏");
+		break;
+		case 9,10,11:
+			System.out.println("秋");
+		break;
+		default:															//それ以外は「無効な月です」と表示
+			System.out.println("無効な月です");		
+		}
+		scanner.close();	
+			
 		
 
 	}
