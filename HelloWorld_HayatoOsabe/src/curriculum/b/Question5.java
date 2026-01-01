@@ -4,19 +4,19 @@ public class Question5 {
 
 	
 	//Q1
-	public static void helloWorld() {
-		System.out.println("Hello, World!");
+	public static void helloWorld() {							//メソッドの作製
+		System.out.println("Hello, World!");					//Hello, World！の表示
 	}
 	
 
 	//Q2
-	public static int doubleValue(int num) {
-		return num * 2;
+	public static int doubleValue(int num) {					//メソッドの作製
+		return num * 2;											//戻り値2倍
 	}
 	
 	//Q3
-	public static boolean isEven(int num) {
-		return num % 2 ==0;
+	public static boolean isEven(int num) {						//メソッドの作製
+		return num % 2 ==0;										//偶数奇数判断
 	}
 
 	
